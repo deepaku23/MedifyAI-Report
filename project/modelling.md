@@ -171,3 +171,5 @@ The cost estimation for model inference and data retrieval is based on:
 By optimizing embedding dimensionality and retrieval size, API costs are minimized while maintaining accuracy.  
 
 ---
+
+The link to the modelling pipeline is [here](https://github.com/deepaku23/MedifyAI/tree/main/backend/ml_pipeline)
