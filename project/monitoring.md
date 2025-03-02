@@ -1,6 +1,17 @@
-# 1. Monitoring System for Medify AI  
+# Monitoring
 
-## 1.1 Overview  
+## Outline:
+
+1. [Introduction](introduction.md)
+2. [Scoping](scoping.md)
+3. [Data Pipeline](data_pipeline.md)
+4. [Modeling](modelling.md)
+5. [Deployment](deployment.md)
+6. [AWS Deployment Setup](aws_deployment_setup.md)
+7. [CI/CD](cicd.md)
+8. [Monitoring](monitoring.md)
+
+## Overview  
 
 To ensure the reliability of Medify AI, a comprehensive monitoring system tracks model performance, data drift, and retrieval accuracy. Since the system uses a pre-trained model, retraining is not possible, making continuous monitoring essential to detect issues early.  
 
