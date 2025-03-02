@@ -1,15 +1,16 @@
-# 1. CI/CD Pipeline for Medify AI  
+# 1. CI/CD Pipeline
 
 ## Outline:
 
 - [Introduction](introduction.md)
 - [Scoping](scoping.md)
-- [Data Pipeline](data_pipeline.md)
+- [Data Pipeline](data.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
 - [AWS Deployment Setup](aws_deployment_setup.md)
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
+
  
 
 The continuous integration and continuous deployment (CI/CD) pipeline ensures that updates to Medify AI's **frontend and backend** are **tested, containerized, and deployed automatically**. This reduces manual work, ensures stability, and allows faster improvements to the system.  

@@ -1,4 +1,4 @@
-# MedifyAI: Advanced Medical Analysis System
+# Introduction
 
 ## Team Information
 
@@ -16,12 +16,13 @@
 
 - [Introduction](introduction.md)
 - [Scoping](scoping.md)
-- [Data Pipeline](data_pipeline.md)
+- [Data Pipeline](data.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
 - [AWS Deployment Setup](aws_deployment_setup.md)
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
+
 
 
 

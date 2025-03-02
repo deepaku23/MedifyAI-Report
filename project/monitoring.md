@@ -2,14 +2,15 @@
 
 ## Outline:
 
-1. [Introduction](introduction.md)
-2. [Scoping](scoping.md)
-3. [Data Pipeline](data_pipeline.md)
-4. [Modeling](modelling.md)
-5. [Deployment](deployment.md)
-6. [AWS Deployment Setup](aws_deployment_setup.md)
-7. [CI/CD](cicd.md)
-8. [Monitoring](monitoring.md)
+- [Introduction](introduction.md)
+- [Scoping](scoping.md)
+- [Data Pipeline](data.md)
+- [Modeling](modelling.md)
+- [Deployment](deployment.md)
+- [AWS Deployment Setup](aws_deployment_setup.md)
+- [CI/CD](cicd.md)
+- [Monitoring](monitoring.md)
+
 
 ## Overview  
 
