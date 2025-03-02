@@ -27,7 +27,7 @@
 
 ## Demo Video
 
-[Watch the demo](https://northeastern-my.sharepoint.com/personal/tripathi_am_northeastern_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Ftripathi%5Fam%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FMedify%5FMLOps%5FGroup10%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E97e30119%2D08a2%2D49ae%2Db898%2D168f58a3b907)
+[Watch the demo](https://youtu.be/8Es0yfmc8uc)
 
 ---
 

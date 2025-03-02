@@ -7,6 +7,7 @@
 - [Data Pipeline](data_pipeline.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
+- [AWS Deployment Setup](aws_deployment_setup.md)
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
 
