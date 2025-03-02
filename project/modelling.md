@@ -7,6 +7,7 @@
 - [Data Pipeline](data_pipeline.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
+- [AWS Deployment Setup](aws_deployment_setup.md)
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
 
@@ -21,7 +22,7 @@ The modelling pipeline in MedifyAI consists of three key phases:
 
 These phases ensure structured medical conversations, accurate retrieval-based analysis, and explainable AI-driven patient insights.  
 
----
+
 
 ## 2. System Architecture  
 
@@ -29,7 +30,7 @@ Below is a high-level workflow of the HealthcareChatLLM and RAG system.
 
 ![HealthcareChatLLM and RAG Workflow](images/0.png)   
 
----
+
 
 # 3. HealthcareChatLLM: Medical Symptom Collection  
 
@@ -47,7 +48,7 @@ HealthcareChatLLM structures patient interactions by guiding users through a con
 6. Once the user has no further input, the system summarizes the symptoms.  
 
 
----
+
 
 # 4. RAG System: Case-Based Medical Analysis  
 
@@ -64,7 +65,7 @@ The RAG model retrieves similar historical cases from the dataset and generates 
 5. Context is provided, and a doctor summary is generated.  
 
 
----
+
 
 # 5. OpenBioLLM: Interactive Patient Report Analysis  
 
@@ -80,7 +81,6 @@ Once the doctor summary is generated, OpenBioLLM allows patients to ask question
 4. Follow-up questions can be asked for deeper clarification.  
 
 
----
 
 # 6. Model Tracking and Experimentation  
 
@@ -106,7 +106,7 @@ Several experiments were conducted to identify the best-performing model.
 
 The final model configuration uses GPT-4o with three retrieved samples, as it provided the best balance of accuracy, cost, and bias minimization.  
 
----
+
 
 # 7. Bias Detection and Evaluation  
 
@@ -131,7 +131,7 @@ The following metrics were used to evaluate model performance:
 
 A similarity threshold of 0.5 was used to determine whether retrieved cases were relevant.  
 
----
+
 
 # 8. Technical Components  
 
@@ -155,7 +155,7 @@ A similarity threshold of 0.5 was used to determine whether retrieved cases were
 | RAG System | GPT-4o | Context-based medical case retrieval and doctor summary generation |
 | OpenBioLLM | OpenBioLLM (LLaMA 3 - 70B) | Interactive patient report explanation |
 
----
+
 
 # 9. Cost Estimations  
 
@@ -170,6 +170,6 @@ The cost estimation for model inference and data retrieval is based on:
 
 By optimizing embedding dimensionality and retrieval size, API costs are minimized while maintaining accuracy.  
 
----
+
 
 The link to the modelling pipeline is [here](https://github.com/deepaku23/MedifyAI/tree/main/backend/ml_pipeline)

@@ -21,7 +21,7 @@ The continuous integration and continuous deployment (CI/CD) pipeline ensures th
 - Maintains a **consistent and reliable system**  
 - Provides **automated monitoring** and rollback in case of issues  
 
----
+
 
 ## 2. CI/CD Pipeline Structure  
 
@@ -38,7 +38,7 @@ Below is the **automated deployment pipeline** used for Medify AI.
 
 This automated process allows Medify AI to **update quickly and reliably** without manual intervention.  
 
----
+
 
 ## 3. CI/CD Execution Flow  
 
@@ -48,7 +48,7 @@ The following image shows the **pipeline execution**, with **parallel frontend a
 
 ![CI/CD Execution Flow](images/9.png)  
 
----
+
 
 # 4. Frontend Deployment  
 
@@ -73,7 +73,7 @@ Below is the automated deployment process for the frontend.
 
 This automation ensures that **whenever developers update the frontend**, users **immediately see the latest version**.  
 
----
+
 
 # 5. Backend Deployment  
 
@@ -98,7 +98,7 @@ The backend follows a similar deployment process to the frontend.
 
 By automating backend deployment, Medify AI ensures that **API updates, AI improvements, and data processing enhancements** are available to users **without downtime**.  
 
----
+
 
 # 6. Deployment Notifications  
 
@@ -116,7 +116,7 @@ Once the system confirms that deployment is successful, it sends a **notificatio
 
 ![Deployment Notification](images/12.png)  
 
----
+
 
 # 7. Key Benefits of CI/CD in Medify AI  
 
@@ -126,7 +126,7 @@ Once the system confirms that deployment is successful, it sends a **notificatio
 4. **Scalability** – Supports cloud-based growth  
 5. **Monitoring and Alerts** – Tracks system health and prevents failures  
 
----
+
 
 # 8. Conclusion  
 

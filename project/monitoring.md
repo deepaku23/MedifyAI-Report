@@ -20,7 +20,7 @@ The key monitoring components include:
 - Retrieval performance tracking to monitor the accuracy of the RAG system  
 - Real-time system monitoring using Prometheus and Grafana  
 
----
+
 
 # 2. Model and Data Drift Monitoring  
 
@@ -36,7 +36,7 @@ The key monitoring components include:
 - Embedding updates: A Lambda function generates embeddings for new patient records and updates the Pinecone vector database  
 - CloudWatch alerts track drift trends and log failures  
 
----
+
 
 # 3. Real-Time Monitoring with Prometheus and Grafana  
 
@@ -61,7 +61,7 @@ The key monitoring components include:
 2. Grafana visualizes system health with real-time graphs  
 3. If an issue is detected, alerts are sent via Slack or email  
 
----
+
 
 # 4. Monitoring System Architecture  
 
@@ -69,7 +69,7 @@ The following diagram illustrates the Cloud Run monitoring setup.
 
 ![Cloud Run Monitoring](images/14.png)  
 
----
+
 
 # 5. Alerting System  
 
@@ -85,7 +85,7 @@ The following diagram illustrates the Cloud Run monitoring setup.
 - Provide real-time insights for proactive fixes  
 - Help scale the system dynamically to maintain smooth operations  
 
----
+
 
 # 6. Conclusion  
 

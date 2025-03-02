@@ -10,7 +10,7 @@
 | Rohit Kumar Gaddam | [gaddamsreeramulu.r@northeastern.edu](mailto:gaddamsreeramulu.r@northeastern.edu) |
 | Sneha Amin | [amin.sn@northeastern.edu](mailto:amin.sn@northeastern.edu) |
 
----
+
 
 ## Table of Contents
 
@@ -23,13 +23,13 @@
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
 
----
+
 
 ## Demo Video
 
 [Watch the demo](https://youtu.be/8Es0yfmc8uc)
 
----
+
 
 ## Introduction
 
@@ -39,7 +39,7 @@ PatientInsight is a healthcare analytics system that enhances medical symptom an
 
 It uses the **PMC-Patients dataset** ([link](https://huggingface.co/datasets/zhengyun21/PMC-Patients)), which contains 167,034 anonymized patient summaries from PubMed Central (PMC).
 
----
+
 
 ## 2. Methodology
 
@@ -72,7 +72,7 @@ The system is structured into three primary phases:
   - Provides clarifications** and explanations about medical findings.
   - Ensures accurate, context-aware responses.
 
----
+
 
 ## 3. Goals
 
@@ -82,7 +82,7 @@ The system is structured into three primary phases:
 4. **Ensure Bias-Free AI** – Robust bias detection and fairness checks.
 5. **Seamless MLOps Deployment** – Cloud-based automation & monitoring.
 
----
+
 
 The source code for our project can be found here:  [GitHub](https://github.com/deepaku23/MedifyAI).
 
@@ -98,10 +98,9 @@ The source code for our project can be found here:  [GitHub](https://github.com/
 | **Monitoring & Logging** | Prometheus, CloudWatch, Grafana |
 | **Vector Database** | Pinecone |
 
----
+
 
 ## Project Architecture
 
 ![Architecture](images/15.png)
 
----
