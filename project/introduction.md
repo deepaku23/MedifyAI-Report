@@ -33,9 +33,9 @@
 
 ### 1. Problem Statement and Overview
 
-PatientInsight is a **healthcare analytics system** that enhances medical symptom analysis and **patient care through AI-powered tools**. The system integrates **medical chatbots**, **retrieval-augmented generation (RAG) models**, and **automated data pipelines** to provide **accurate medical insights and treatment recommendations**. 
+PatientInsight is a healthcare analytics system that enhances medical symptom analysis and patient care through AI-powered tools. The system integrates medical chatbots, retrieval-augmented generation (RAG) models, and automated data pipelines to provide accurate medical insights and treatment recommendations. 
 
-It leverages the **PMC-Patients dataset** ([link](https://huggingface.co/datasets/zhengyun21/PMC-Patients)), which contains **167,034 anonymized patient summaries** from **PubMed Central (PMC)**.
+It uses the **PMC-Patients dataset** ([link](https://huggingface.co/datasets/zhengyun21/PMC-Patients)), which contains 167,034 anonymized patient summaries from PubMed Central (PMC).
 
 ---
 
@@ -47,38 +47,38 @@ The system is structured into three primary phases:
 
 #### 2.1. **Medical Chatbot (HealthcarechatLLM)**
 - **Model Used:** GPT-3.5
-- **Purpose:** Dynamic **symptom collection** and **clinical summaries**.
+- **Purpose:** Dynamic symptom collection and clinical summaries.
 - **Capabilities:**
-  - Structured **symptom gathering**.
-  - **Real-time emergency detection**.
-  - **Clinical summary generation**.
-  - **Bias detection** for fair patient interactions.
+  - Structured symptom gathering.
+  - Real-time emergency detection.
+  - Clinical summary generation.
+  - Bias detection for fair patient interactions.
 
 #### 2.2. **Medical Analysis (RAG System)**
 - **Embedding Model:** `sentence-transformers/all-MiniLM-L6-v2`
 - **Generation Model:** GPT-4
-- **Purpose:** **Retrieval-based medical analysis**.
+- **Purpose:***Retrieval-based medical analysis.
 - **Capabilities:**
-  - **Retrieval-Augmented Generation (RAG)** for case-based diagnosis.
-  - **Historical medical case-based recommendations**.
-  - **Comprehensive tracking via MLflow**.
+  - Retrieval-Augmented Generation (RAG) for case-based diagnosis.
+  - Historical medical case-based recommendations.
+  - Comprehensive tracking via MLflow.
 
 #### 2.3. **Patient Report Interaction (OpenBioLLM)**
 - **Model Used:** `OpenBioLLM (LLaMA 3 - 70B)` ([More Info](https://www.saama.com/introducing-openbiollm-llama3-70b-8b-saamas-ai-research-lab-released-the-most-openly-available-medical-domain-llms-to-date/))
 - **Purpose:** Patients can **interact with doctor reports**.
 - **Capabilities:**
-  - Provides **clarifications** and **explanations** about medical findings.
-  - Ensures **accurate, context-aware responses**.
+  - Provides clarifications** and explanations about medical findings.
+  - Ensures accurate, context-aware responses.
 
 ---
 
 ## 3. Goals
 
-1. **Enhance Patient Interaction** – AI-powered **symptom collection chatbot**.
-2. **Improve Diagnosis** – Retrieval-based **medical case insights**.
-3. **Enable Patient Empowerment** – AI-assisted **medical report explanations**.
-4. **Ensure Bias-Free AI** – Robust **bias detection and fairness checks**.
-5. **Seamless MLOps Deployment** – **Cloud-based automation & monitoring**.
+1. **Enhance Patient Interaction** – AI-powered symptom collection chatbot.
+2. **Improve Diagnosis** – Retrieval-based medical case insights.
+3. **Enable Patient Empowerment** – AI-assisted medical report explanations.
+4. **Ensure Bias-Free AI** – Robust bias detection and fairness checks.
+5. **Seamless MLOps Deployment** – Cloud-based automation & monitoring.
 
 ---
 
