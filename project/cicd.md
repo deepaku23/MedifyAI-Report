@@ -1,41 +1,141 @@
-## Deployemnt Automation through Continuous Integration and Deployment Pipeline
+# 1. CI/CD Pipeline for Medify AI  
 
-### Overview
-Our project implements a sophisticated CI/CD pipeline using GitHub Actions, ensuring automated testing, building, and deployment of our healthcare application components. This automation pipeline is defined in two key workflow files: `.github/workflows/continuous_integration.yml` for testing and `.github/workflows/continuous_deployment.yml` for deployment, creating a seamless path from development to production.
+## Outline:
 
-### Continuous Integration Process
-Our CI pipeline automatically triggers on pull requests to the staging branch, specifically monitoring changes in the backend directory. The pipeline executes comprehensive testing of both ML and data components:
+- [Introduction](introduction.md)
+- [Scoping](scoping.md)
+- [Data Pipeline](data_pipeline.md)
+- [Modeling](modelling.md)
+- [Deployment](deployment.md)
+- [AWS Deployment Setup](aws_deployment_setup.md)
+- [CI/CD](cicd.md)
+- [Monitoring](monitoring.md)
+ 
 
-The ML pipeline testing encompasses multiple critical areas:
-- Retrieval validation ensuring accurate case matching
-- Bias metric evaluation for fairness in medical responses
-- Integrated pipeline testing for end-to-end functionality
-- Environment variable validation for secure configuration
+The continuous integration and continuous deployment (CI/CD) pipeline ensures that updates to Medify AI's **frontend and backend** are **tested, containerized, and deployed automatically**. This reduces manual work, ensures stability, and allows faster improvements to the system.  
 
-The data pipeline testing validates:
-- Data download processes
-- Preprocessing functionality
-- Data quality checks
+### Why is CI/CD important in Medify AI?  
 
-Each test execution is monitored, with automated email notifications sent to the team indicating success or failure, enabling quick response to any issues that arise during the integration process.
+- Ensures **new features and fixes** reach users quickly  
+- Reduces **manual deployment errors**  
+- Maintains a **consistent and reliable system**  
+- Provides **automated monitoring** and rollback in case of issues  
 
-### Continuous Deployment Strategy
-The deployment pipeline, triggered automatically on pushes to the main branch from the staging branch, handles the deployment of both frontend and backend components to our EKS cluster. The process includes:
+---
 
-1. **Container Image Building**
-   - Automated building of Docker images for both frontend and backend
-   - Push to Amazon ECR with versioning
-   - Platform-specific builds (linux/amd64) for compatibility
+## 2. CI/CD Pipeline Structure  
 
-2. **Kubernetes Deployment**
-   - Automatic update of EKS cluster configuration
-   - Rolling deployment to ensure zero-downtime updates
-   - Service configuration and load balancer setup
-   - Health check validation
+Below is the **automated deployment pipeline** used for Medify AI.  
 
-3. **Notification System**
-   - Automated email notifications for deployment status
-   - Detailed reporting of success/failure for each component
-   - Team-wide communication of deployment results
+### 2.1 How does this pipeline work?  
 
-This automated pipeline ensures that our medical analysis system remains current and reliable, with minimal manual intervention required for updates and deployments. The process maintains high standards for testing and deployment while providing comprehensive monitoring and notification systems for the development team.
+1. **Developers push changes** to the GitHub repository  
+2. **GitHub Actions runs tests** to ensure no errors are introduced  
+3. **Docker images are built** and pushed to Amazon Elastic Container Registry (ECR)  
+4. **AWS EKS (Kubernetes)** deploys the new version automatically  
+5. **CloudWatch and Prometheus** monitor system health  
+6. **A notification** is sent when deployment is complete  
+
+This automated process allows Medify AI to **update quickly and reliably** without manual intervention.  
+
+---
+
+## 3. CI/CD Execution Flow  
+
+### 3.1 Continuous Deployment Execution  
+
+The following image shows the **pipeline execution**, with **parallel frontend and backend deployment**, followed by the **notify-deployment** step.  
+
+![CI/CD Execution Flow](images/9.png)  
+
+---
+
+# 4. Frontend Deployment  
+
+### 4.1 What is the frontend?  
+
+The frontend is the **user interface** of Medify AI. It allows patients and doctors to interact with the system through a **web application**.  
+
+### 4.2 How is the frontend deployed?  
+
+Below is the automated deployment process for the frontend.  
+
+![Frontend Deployment](images/10.png)  
+
+#### Steps in Frontend Deployment  
+
+1. **Checkout code** – Fetches the latest frontend changes  
+2. **AWS authentication** – Ensures secure cloud access  
+3. **Build and push image** – Packages the frontend into a Docker container  
+4. **Deploy to AWS EKS** – Updates the frontend running on AWS  
+5. **Start the service** – Ensures the frontend is live  
+6. **Post deployment checks** – Confirms everything is working  
+
+This automation ensures that **whenever developers update the frontend**, users **immediately see the latest version**.  
+
+---
+
+# 5. Backend Deployment  
+
+### 5.1 What is the backend?  
+
+The backend processes **user requests, runs AI models, and manages data storage**. It ensures that **patient records, chatbot responses, and medical recommendations** are handled efficiently.  
+
+### 5.2 How is the backend deployed?  
+
+The backend follows a similar deployment process to the frontend.  
+
+![Backend Deployment](images/11.png)  
+
+#### Steps in Backend Deployment  
+
+1. **Checkout code** – Fetches the latest backend updates  
+2. **AWS authentication** – Grants secure cloud access  
+3. **Build and push backend image** – Packages the backend into a Docker container  
+4. **Deploy to AWS EKS** – Updates backend services on AWS  
+5. **Start backend services** – Ensures APIs and AI models run correctly  
+6. **Post deployment validation** – Checks that backend is functioning properly  
+
+By automating backend deployment, Medify AI ensures that **API updates, AI improvements, and data processing enhancements** are available to users **without downtime**.  
+
+---
+
+# 6. Deployment Notifications  
+
+After deploying the **frontend and backend**, the system **notifies the team** that the update was successful.  
+
+### 6.1 Why are deployment notifications important?  
+
+- Keeps the team informed about **successful or failed deployments**  
+- Helps developers **debug issues quickly**  
+- Ensures that **no changes go unnoticed**  
+
+### 6.2 How does notification work?  
+
+Once the system confirms that deployment is successful, it sends a **notification** via Slack, Email, or AWS SNS.  
+
+![Deployment Notification](images/12.png)  
+
+---
+
+# 7. Key Benefits of CI/CD in Medify AI  
+
+1. **Faster Updates** – New features and fixes are deployed quickly  
+2. **Automated Testing** – Catches issues before they affect users  
+3. **Zero Downtime Deployments** – Ensures system availability  
+4. **Scalability** – Supports cloud-based growth  
+5. **Monitoring and Alerts** – Tracks system health and prevents failures  
+
+---
+
+# 8. Conclusion  
+
+The CI/CD pipeline in Medify AI ensures **automated, reliable, and scalable deployment**.  
+
+- The **frontend and backend** are updated **seamlessly**  
+- **Testing and monitoring** guarantee system stability  
+- **Automatic rollback** prevents issues from affecting users  
+
+This system allows Medify AI to **continuously improve** while maintaining a **stable and user-friendly experience** for patients and doctors.  
+
+Workflow code can be found [here](https://github.com/deepaku23/MedifyAI/tree/main/.github/workflows)

@@ -57,7 +57,7 @@ Kubernetes Services provide stable networking interfaces, ensuring secure intern
 
 ### 3.6 Load Balancing Strategy
 
-![Load Balancing](images/15.png)
+![Load Balancing](images/5.png)
 
 AWS Network Load Balancers ensure optimal traffic distribution and high availability.
 
