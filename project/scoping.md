@@ -1,4 +1,4 @@
-# Project Scoping: PatientInsight
+# Project Scoping: MedifyAI
 
 ## Outline:
 
@@ -12,13 +12,13 @@
 
 ## 1. Overview
 
-PatientInsight is an AI-driven healthcare analytics system for medical symptom analysis and case-based diagnosis. It integrates conversational AI, retrieval-augmented generation (RAG), and cloud-based MLOps to assist healthcare professionals. 
+MedifyAI is an AI-driven healthcare analytics system for medical symptom analysis and case-based diagnosis. It integrates conversational AI, retrieval-augmented generation (RAG), and cloud-based MLOps to assist healthcare professionals. 
 
 The system is built on the PMC-Patients dataset, which includes 167,034 anonymized patient summaries extracted from PubMed Central. More details on the dataset can be found here: [PMC-Patients Dataset](https://huggingface.co/datasets/zhengyun21/PMC-Patients).
 
 ## 2 Problem Statement
 
-Healthcare systems often lack structured patient symptom collection and real-time medical assistance. Doctors rely on incomplete patient histories, leading to diagnostic delays. PatientInsight aims to improve this by enabling structured symptom collection, retrieval-based case comparison, and patient interaction with their medical reports.
+Healthcare systems often lack structured patient symptom collection and real-time medical assistance. Doctors rely on incomplete patient histories, leading to diagnostic delays. MedifyAI aims to improve this by enabling structured symptom collection, retrieval-based case comparison, and patient interaction with their medical reports.
 
 ## 3 Objectives
 

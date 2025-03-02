@@ -1,4 +1,4 @@
-# PatientInsight: Advanced Medical Analysis System
+# MedifyAI: Advanced Medical Analysis System
 
 ## Team Information
 
@@ -15,6 +15,7 @@
 ## Table of Contents
 
 - [Introduction](introduction.md)
+- [Scoping](scoping.md)
 - [Data Pipeline](data_pipeline.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
