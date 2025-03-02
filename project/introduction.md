@@ -19,6 +19,7 @@
 - [Data Pipeline](data_pipeline.md)
 - [Modeling](modelling.md)
 - [Deployment](deployment.md)
+- [AWS Deployment Setup](aws_deployment_setup.md)
 - [CI/CD](cicd.md)
 - [Monitoring](monitoring.md)
 
@@ -101,6 +102,6 @@ The source code for our project can be found here:  [GitHub](https://github.com/
 
 ## Project Architecture
 
-![Architecture](images/28.png)
+![Architecture](images/15.png)
 
 ---

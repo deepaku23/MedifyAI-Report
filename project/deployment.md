@@ -14,6 +14,8 @@
 ## 1. Introduction
 MedifyAI is a cloud-native solution designed for scalable, reliable, and secure medical symptom analysis. This document outlines the deployment strategy, highlighting the use of AWS services and the architectural decisions that ensure high availability and scalability.
 
+Here is the video for the deployemnt and the demo: [Video](https://youtu.be/6j9V9x5tGJM)
+
 ## 2. Cloud Infrastructure Overview
 
 ### 2.1 Deployment Environment: Cloud-Based Solution
